@@ -15,9 +15,9 @@ const Navbar = () => {
   return (
     <AppBar
       position="static"
-      // sx={{
-      //   backgroundColor: darkMode ? 'grey.900' : 'primary.main', // Change background color based on dark mode
-      // }}
+      sx={{
+        backgroundColor: darkMode ? 'grey.900' : 'primary.main', // Change background color based on dark mode
+      }}
     >
       <Toolbar>
         <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>

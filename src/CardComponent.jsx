@@ -11,12 +11,12 @@ const CardComponent = () => {
 
   return (
     <Card
-      // sx={{
-      //   maxWidth: 345,
-      //   margin: '20px auto',
-      //   backgroundColor: darkMode ? 'grey.900' : 'white', // Dynamically set background color based on dark mode
-      //   color: darkMode ? 'white' : 'black', // Adjust text color
-      // }}
+      sx={{
+        maxWidth: 345,
+        margin: '20px auto',
+        backgroundColor: darkMode ? 'grey.900' : 'white', // Dynamically set background color based on dark mode
+        color: darkMode ? 'white' : 'black', // Adjust text color
+      }}
     >
       <CardMedia
         component="img"
@@ -28,7 +28,7 @@ const CardComponent = () => {
         <Typography gutterBottom variant="h5" component="div">
           Sample Card Title
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2">
           This is a sample description inside a Material UI card. You can replace this text with your own content.
         </Typography>
       </CardContent>
