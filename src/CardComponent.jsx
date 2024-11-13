@@ -1,12 +1,23 @@
+// src/CardComponent.jsx
 import React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import { useTheme } from './ThemeContext';
 
 const CardComponent = () => {
+  const { darkMode } = useTheme();
+
   return (
-    <Card sx={{ maxWidth: 345, margin: '20px auto' }}>
+    <Card
+      // sx={{
+      //   maxWidth: 345,
+      //   margin: '20px auto',
+      //   backgroundColor: darkMode ? 'grey.900' : 'white', // Dynamically set background color based on dark mode
+      //   color: darkMode ? 'white' : 'black', // Adjust text color
+      // }}
+    >
       <CardMedia
         component="img"
         alt="Sample Image"

@@ -7,10 +7,18 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Switch from '@mui/material/Switch';
 import FormControlLabel from '@mui/material/FormControlLabel';
+import { useTheme } from './ThemeContext';
 
-const Navbar = ({ toggleDarkMode, darkMode }) => {
+const Navbar = () => {
+  const { darkMode, toggleDarkMode } = useTheme();
+
   return (
-    <AppBar position="static">
+    <AppBar
+      position="static"
+      // sx={{
+      //   backgroundColor: darkMode ? 'grey.900' : 'primary.main', // Change background color based on dark mode
+      // }}
+    >
       <Toolbar>
         <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
           <MenuIcon />
