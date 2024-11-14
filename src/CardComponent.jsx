@@ -5,17 +5,17 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { useTheme } from './ThemeContext';
+import './Styles/CardComponent.css';
 
 const CardComponent = () => {
   const { darkMode } = useTheme();
 
   return (
     <Card
-      sx={{
-        maxWidth: 345,
-        margin: '20px auto',
-        backgroundColor: darkMode ? 'grey.900' : 'white', // Dynamically set background color based on dark mode
-        color: darkMode ? 'white' : 'black', // Adjust text color
+      className="card"
+      style={{
+        backgroundColor: darkMode ? '#212121' : '#ffffff', // Replace 'grey.900' and 'white' with actual colors
+        color: darkMode ? '#ffffff' : '#000000', // Replace colors as needed
       }}
     >
       <CardMedia
@@ -24,7 +24,7 @@ const CardComponent = () => {
         height="140"
         image="https://via.placeholder.com/300"
       />
-      <CardContent>
+      <CardContent className="card-content">
         <Typography gutterBottom variant="h5" component="div">
           Sample Card Title
         </Typography>

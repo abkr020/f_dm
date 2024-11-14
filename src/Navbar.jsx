@@ -8,22 +8,23 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Switch from '@mui/material/Switch';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import { useTheme } from './ThemeContext';
+import './Styles/Navbar.css';
 
 const Navbar = () => {
   const { darkMode, toggleDarkMode } = useTheme();
 
   return (
     <AppBar
-      position="static"
-      sx={{
-        backgroundColor: darkMode ? 'grey.900' : 'primary.main', // Change background color based on dark mode
+      className="app-bar"
+      style={{
+        backgroundColor: darkMode ? 'grey.900' : 'primary.main', // Replace 'grey.900' and 'primary.main' with actual colors
       }}
     >
       <Toolbar>
-        <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
+        <IconButton className="icon-button" edge="start" aria-label="menu">
           <MenuIcon />
         </IconButton>
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+        <Typography variant="h6" component="div" className="toolbar">
           Vite Material UI App
         </Typography>
         <FormControlLabel

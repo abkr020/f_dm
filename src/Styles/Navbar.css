@@ -1,0 +1,15 @@
+/* src/Navbar.css */
+.app-bar {
+    position: static !important;
+  }
+  
+  .icon-button {
+    margin-right: 16px; /* 2 * default spacing */
+    color: inherit;
+  }
+  
+  .toolbar {
+    flex-grow: 1;
+  }
+  
+  

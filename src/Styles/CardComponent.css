@@ -1,0 +1,12 @@
+/* src/CardComponent.css */
+
+.card {
+    max-width: 345px;
+    margin: 20px auto;
+  }
+  
+  .card-content {
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+  
